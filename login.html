@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("./imgs/kia-stinger-orange.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            font-family: "Inter";
+        }
+
+        .main-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            
+        }
+
+        .user-info {
+            margin: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .user-button {
+            text-align: center;
+        }
+
+        input {
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        #login-button {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="login-box">
+            <h2>Login</h2><hr />
+            <form>
+                <div class="user-info">
+                    <label>Email</label><br />
+                    <input type="email" placeholder="Email" required/><br />
+                </div>
+                <div class="user-info">
+                    <label>Password</label><br />
+                    <input type="password" id="pass_entry" min="8" max="10" placeholder="Password"/>
+                </div>
+                <div class="user-button">
+                    <button id="login-button">Login</button>
+                </div>
+            </form>  
+        </div>
+    </div>
+    <script src="./login.js"></script>
+    
+</body>
+</html>

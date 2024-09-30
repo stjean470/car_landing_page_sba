@@ -1,0 +1,109 @@
+
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.options {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;   
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options:hover {
+    box-shadow: 0 0 10px 5px black;
+    background-color: white;
+    color: black;  
+}
+
+#main-body {
+    opacity: 0;
+    width: 100%;
+    height: 75vh;
+    background: url("./imgs/dodge-charger\(black\).jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+#features-section {
+    display: flex;
+    flex-direction: column;
+}
+.feature-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+}
+
+#car-option-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.car-option-header {
+    width: 100%;
+    height: 50vh;
+    background: url("./imgs/mercedes-amg.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-option-header > h1 {
+    font-weight: bolder;
+}
+
+.car-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.car-choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-choice-img {
+    height: 15rem;
+}
+
+.buyNow {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buyNow:hover {
+    box-shadow: 0 0 10px 5px white;
+    background-color: black;
+    color: white;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+}

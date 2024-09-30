@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+            background-color:black !important;
+            font-family: "Inter";
+            color: white;
+        }
+    </style>
+</head> 
+    <header>
+        <nav>        
+            <div id="logo-box">             
+                <h3>Logo</h3>         
+            </div>
+            <div id="nav-options">
+                <div class="options" onclick="toggleHome()">
+                    <p>Home</p>
+                </div>
+                <div class="options" onclick="checkMoreOptions()">
+                    <p>Options</p>
+                </div>
+                <div class="options" onclick="toggleLogin()">
+                    <p>Log in</p>
+                </div>
+            </div>        
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <div id="main-body">
+            <h2>Bring On The Sport</h2>
+        </div>
+        <hr />
+        <div id="features-section">
+            <div class="feature-intro">
+                <h3>Features</h3>
+                <p>We offer some of the best features.</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h4>Delivarible</h4>
+                    <p>We deliver the vehicle directly to you. You'll could wake up to your new car on your driveway</p>
+                </div>
+                <div class="feature">
+                    <h4>Quality</h4>
+                    <p>We offer the most popular, quality muscle cars in good condition new, or used.</p>
+                </div>
+                <div class="feature">
+                    <h4>Proctecion</h4>
+                    <p>We offer a 50,000 mile basic warranty for all basic maintainence once you purchase a vehicle.</p>
+                </div>
+            </div>
+        </div>
+        <div id="car-option-section">
+            <div class="car-option-header">
+                <h2>Some of Our Hot Rides</h2>
+            </div>
+            <hr />
+            <div class="car-options">
+                <div class="car-choice">
+                    <img src="./imgs/dodge-charger-yellow.jpg" class="car-choice-img"/>
+                    <h4>Dodge Charger 392 Scat Pack</h4>
+                    <button class="buyNow">Buy Now</button>
+                </div>
+                <div class="car-choice">
+                    <img src="./imgs/dodge-challenger-widebody-scat-pack-red.jpg" class="car-choice-img" />
+                    <h4>Dodge Challenger Widebody Scat Pack</h4>
+                    <button class="buyNow">Buy Now</button>
+                </div>
+                <div class="car-choice">
+                    <img src="./imgs/ford-mustang-silver.jpg" class="car-choice-img" />
+                    <h4>Dodge Challenger Widebody Scat Pack</h4>
+                    <button class="buyNow">Buy Now</button>
+                </div>
+            </div><br />
+            <div id="exploreMore">
+                <button id="exploreMoreButton" class="buyNow" onclick="checkMoreOptions()">Check More</button>
+            </div>
+            <hr />
+        </div>
+        <hr />
+    </main>
+    <footer>
+        <div id="footer-section">
+            <div class="footer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+            </div>
+            <div class="footer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+            </div>        
+            
+            <div class="footer-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+                    <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"/>
+                </svg>
+            </div>
+                
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
